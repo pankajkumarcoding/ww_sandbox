@@ -1,0 +1,225 @@
+
+#chloro-map-wrapper {
+    width:100%;
+    display:block;
+    margin:auto auto;
+}
+.main-wrapper {
+    width: 100%;
+}
+.best-wrapper-alive {
+    /* display:inline-block; */
+}
+
+.mod-major {
+    height:0;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background: #f8f9fa;
+    z-index:500;
+    width:100%;
+    /* opacity:0; */
+    transition: opacity 2s;
+}
+
+/* BEGIN MOD BUTTONS */
+.mod-btn {
+    display:none;
+    position: absolute;
+    bottom: 0;
+    width: 25%;
+    height: 22px;
+    background: #d7ecec;
+    border: 1px solid rgb(255, 255, 255);
+    z-index: 10;
+}
+
+.text {
+    text-align: center;
+    margin: 0;
+    height:100%;
+}
+
+/* START MODS */
+
+/* EXIT */
+#exit-mod {
+    left:75%;
+}
+#exit-mod:hover {
+    background:dodgerblue;
+    color:white;
+}
+.exit-text {
+    color:dodgerblue;
+}
+.exit-text:hover {
+    color:white;
+}
+/*ANALYZE*/
+#analyze-mod {
+    left:0;
+}
+#analyze-mod:hover {
+    background:dodgerblue;
+    color:white;
+}
+.analyze-text {
+    color:dodgerblue;
+}
+.analyze-text:hover {
+    color:white;
+}
+/*SAVE*/
+#save-mod {
+    left: 25%;
+}
+#save-mod:hover {
+    background:dodgerblue;
+    color:white;
+}
+.save-text {
+    color:dodgerblue;
+}
+.save-text:hover {
+    color:white;
+}
+/*CITY*/
+#city-mod {
+    left: 50%;
+}
+#city-mod:hover {
+    background:dodgerblue;
+    color:white;
+}
+.city-text {
+    color:dodgerblue;
+}
+.city-text:hover {
+    color:white;
+}
+/* END MODS */
+
+.button-box {
+    margin-top: 59px;
+    height:90px;
+    width:100%;
+    display: block;
+    vertical-align: top;
+}
+.bg-contents {
+    box-sizing:border-box;
+    width:100%;
+}
+.bg {
+    display:inline-block;
+    width:45%;
+    margin: auto auto;
+}
+.bg-1{
+    width: 25%;
+    box-sizing:border-box;
+    height: 90px;
+    margin:auto auto;
+    box-sizing: border-box;
+}
+.bg-2{
+    height: auto;
+    box-sizing: border-box;
+}
+.button-i {
+    box-sizing: border-box;
+    width:100px;
+    margin:1px;
+    display:inline-block;
+}
+.button-i:hover {
+    cursor: pointer;
+}
+.bg-1 .button-i{
+    box-sizing:border-box;
+    color:lightgoldenrodyellow;
+    padding:10px;
+    background:rgb(86, 68, 123);
+
+}
+.bg-1 .button-i:hover{
+    background:rgb(107, 70, 182);
+}
+
+.bg-2 .button-i{
+    box-sizing:border-box;
+    color:lightgoldenrodyellow;
+    padding:10px;
+    background:rgb(255, 187, 115);
+
+}
+.bg-2 .button-i:hover{
+    background:rgb(255, 151, 39);
+}
+
+.bg-2 .button-i.active {
+    padding:7px;
+    box-sizing:border-box;
+    border:1px solid rgb(218, 218, 218);
+    background:rgb(255, 132, 0);
+}
+.bg-1 .button-i.active {
+    padding:7px;
+    box-sizing:border-box;
+    border:1px solid rgb(204, 204, 204);
+    background:rgb(53, 36, 169);
+}
+
+.bg-title{
+    margin:10px 0;
+    color:rgb(203, 237, 255);
+}
+
+.chloro-tooltip {
+    opacity: 0;
+    position: absolute;
+    top: -12px;
+    left: 0;
+    padding: 0.6em 1em;
+    background: #fff;
+    text-align: center;
+    border: 1px solid #ddd;
+    z-index: 10;
+    transition: all 0.2s ease-out;
+    pointer-events: none;
+}
+
+.chloro-tooltip:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 1px solid #ddd;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    transform: translate(-50%, 50%) rotate(45deg);
+    transform-origin: center center;
+    z-index: 10;
+    box-shadow:20px 20px 10px 10px rgba(102, 105, 124, 0.3);
+}
+
+.chloro-tooltip-country {
+    margin-bottom: 0.2em;
+    font-weight: 600;
+}
+
+.chloro-tooltip-value {
+    font-size: 0.8em;
+}
+
+.nameTip {
+    display:block;
+}
+#county_name_tip {
+    font-size:18px;
+}
