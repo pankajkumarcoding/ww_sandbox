@@ -18,13 +18,9 @@ class MainsAuth extends Component {
                 <Router>
                     <Switch>
 
-                        <Route path="/login">
-                            <Login />
-                        </Route>
+                        <Route path="/login" component={Login} />
                         
-                        <Route path="/signup">
-                            <SignUp />
-                        </Route>
+                        <Route path="/signup" component={SignUp} />
 
                         <Route path="/logout">
                             {/*  ?  */}

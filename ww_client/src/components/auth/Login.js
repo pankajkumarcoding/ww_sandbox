@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import { graphql, Mutation } from 'react-apollo';
+import {LOGIN_MUTATION} from '../../queries/userQueries'
+
+
 
 class Login extends Component {
 
     constructor (props) {
         super(props);
         this.state = {
-            name : "",
+            password : "",
             email : ""
         }
     }
@@ -15,10 +19,26 @@ class Login extends Component {
         console.log("did stuff");
     }
 
+    _confirm(data) {
+
+    }
+
     render () {
+        const {password, email} = this.state;
         return (
             <section className="container">
                 <p>Login Form</p>
+                <Mutation
+                    mutation={LOGIN_MUTATION}
+                    variables={{ email, password }}
+                    onCompleted={data => this._confirm(data)}
+                >
+                    {mutation => (
+                        <div className="pointer mr2 button" onClick={mutation}>
+                            {'login'}
+                        </div>
+                    )}
+                </Mutation>
 
                 <form onSubmit={this.doStuff.bind(this)}>
 

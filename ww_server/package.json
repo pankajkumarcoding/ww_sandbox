@@ -6,17 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Anthony (Yoshi) Lyristis",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
+    "crypto-js": "^4.0.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-graphql": "^0.9.0",
     "graphql": "^15.0.0",
     "lodash": "^4.17.15",
     "mongoose": "^5.9.15",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "openssl-nodejs": "^1.0.5"
   }
 }

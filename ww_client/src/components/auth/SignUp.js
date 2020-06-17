@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import {flowRight as compose} from 'lodash';
-import { graphql } from 'react-apollo';
+import { graphql, Mutation } from 'react-apollo';
+
+
+
 
 class SignUp extends Component {
 
