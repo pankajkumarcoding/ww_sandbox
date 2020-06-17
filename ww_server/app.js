@@ -1,16 +1,21 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
-const schema = require('./schema/schema');
+const cost_schema = require('./schema/cost_schema');
 const mongoose = require('mongoose');
 const cors = require('cors');
-// import {flowRight as compose} from "lodash";
+const config = require('./config');
+const bodyParser = require('body-parser')
 
-const app = express();
+var app = express();
+app.use(bodyParser.json());
+
+// Import the auth routes
+require('./routes/auth')(app);
 
 // allow cross origin requests
 app.use(cors());
 
-mongoose.connect("mongodb+srv://sparxxbl:tempo472!@ww-sandbox-uk3ov.mongodb.net/test?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://sparxxbl:tempo472!@ww-sandbox-uk3ov.mongodb.net/ww_data?retryWrites=true&w=majority")
 mongoose.connection.once('open', () => {
     console.log("Connected to DB");
 });
@@ -22,7 +27,7 @@ app.use('/graphql', graphqlHTTP({
 }));
 
 app.use('/', () => {
-    console.log("hi");
+    console.log("Ouch.");
 });
 
 app.listen(4000, () => {

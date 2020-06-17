@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DoScatterplot from '../charts/do-scatterplot';
+import DoScatterplot from '../../charts/do-scatterplot';
 
 class Scatterplot extends Component {
 

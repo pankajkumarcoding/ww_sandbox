@@ -191,7 +191,6 @@ class DoChloroMap {
             }px)`)
 
         const counties = bounds.append("g")
-
             .selectAll("path")
             .data(this.allUSdata)
             .enter().append("path")
@@ -201,7 +200,6 @@ class DoChloroMap {
                 .attr("d", pathGenerator)
 
         const states = bounds.append("path")
-
             .datum(topojson.mesh(us, us.objects.states, (a, b) => a !== b))
             .attr("fill", "none")
             .attr("stroke", "white")
@@ -271,7 +269,7 @@ class DoChloroMap {
 
         this.allCounties = counties;
 
-        /**
+        /* *
          * 
          * Tooltip functions
          * 
@@ -308,7 +306,6 @@ class DoChloroMap {
     
             );
         }
-
 
         /**
          * Dunzo

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import DoChloroMap from '../charts/do-chloro-map';
-import DataHog from '../helpers/DataHog';
+import DoChloroMap from '../../charts/do-chloro-map';
+import DataHog from '../../helpers/DataHog';
 
-import '../styles/examples.css';
+import '../../styles/examples.css';
 
 class ChloroMap extends Component {
 

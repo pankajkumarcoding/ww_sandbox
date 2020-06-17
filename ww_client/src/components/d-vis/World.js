@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import DoWorld from '../charts/do-world';
+import DoWorld from '../../charts/do-world';
 
-import '../styles/06-world.css';
+import '../../styles/06-world.css';
 
 class SpinningPie extends Component {
 

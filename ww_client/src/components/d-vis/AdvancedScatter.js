@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import DoAdvancedScatter from '../charts/do-advanced-scatter';
-import '../styles/advanced-scatter.css';
+import DoAdvancedScatter from '../../charts/do-advanced-scatter';
+import '../../styles/advanced-scatter.css';
 
 class AdvancedScatter extends Component {
 

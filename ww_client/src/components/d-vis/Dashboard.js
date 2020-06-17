@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
-import DoDashboard from '../charts/do-dashboard';
-import '../styles/dashboard.css';
+import DoDashboard from '../../charts/do-dashboard';
+import '../../styles/dashboard.css';
 
 class Dashboard extends Component {
 

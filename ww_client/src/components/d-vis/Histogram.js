@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import DoHistogram from '../charts/do-histogram';
+import DoHistogram from '../../charts/do-histogram';
 
 class Histogram extends Component {
 

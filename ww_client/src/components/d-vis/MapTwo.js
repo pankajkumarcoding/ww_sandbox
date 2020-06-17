@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DoMaptwo from "../charts/do-maptwo";
+import DoMaptwo from "../../charts/do-maptwo";
 
 class MapTwo extends Component {
 

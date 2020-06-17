@@ -21,7 +21,7 @@
 import React, { Component } from 'react';
 import * as d3 from "d3";
 import { graphql } from 'react-apollo';
-import DataHog from '../helpers/DataHog';
+import DataHog from '../../helpers/DataHog';
 
 class Radar extends Component {
 

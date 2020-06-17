@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DoLinegraph from '../charts/do-linegraph';
+import DoLinegraph from '../../charts/do-linegraph';
 
 class Linegraph extends Component {
 

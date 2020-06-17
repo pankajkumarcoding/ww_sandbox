@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import DoMany from '../charts/do-many';
+import DoMany from '../../charts/do-many';
 
-import '../styles/04-bars.css';
-import '../styles/04-lines.css';
+import '../../styles/04-bars.css';
+import '../../styles/04-lines.css';
 
   class SpinningPie extends Component {
   
